@@ -6,9 +6,9 @@ Use of force data cleaning process
 
 The initial dataset recorded race/ethnicity exactly as it was written in the form, to ensure we captured all the raw data before delving into standardization and simplification. This meant that when the raw data was finished, there were 300+ different entries for race, too many to efficiently analyze the top categories. Another complication was Hispanic/Latino ethnicity. Some forms reported it as a separate category from race, recording subjects as "White Hispanic" or "Black Hispanic", while others reported simply "Hispanic."
 
-To assist with this process, we created a spreadsheet that included all reported racial categories and set about manually choosing the standardized version of those entries. We relied on the New Jersey State Police racial classification system for the departments that used it. Several reporters cross-checked the data coding. We labeled ambiguous entries as "ND", or not determinable. In addition, we created optional columns that separated race and ethnicity, for entries that included both.
+To assist with this process, we created a spreadsheet that included all reported racial categories and set about manually choosing the standardized version of those entries. We relied on the New Jersey State Police racial classification system for the departments that used it. Several reporters cross-checked the data coding. We labeled ambiguous entries as "ND", or not determinable. In addition, we created optional columns that separated race and ethnicity, for entries that included both. In the end, 1.1 percent of officers and 2.3 percent of subjects had both race and Hispanic origin recorded.
 
-Here were the final racial classifications:
+### The final racial classifications:
 
 - WHITE: When the officer or subject was labeled as White or Caucasian.
 - BLACK: When the entry was Black or African-American.
@@ -24,4 +24,6 @@ Here were the final racial classifications:
 - ND: Not determinable - When the entry was unclear, either because of poor abbreviations or unclear terminology. This includes any entry that defined race by the country of origin, such as "Ecuador," or by the religious affliation of the person. It also included obvious mistakes such as entering the gender of the person or their rank instead of their race. In all, roughly 0.4 percent of subjects and 0.2 percent of officers were coded as ND.
 - DEER: When the person was not a person but actually a deer.
 
+### One more caveat
 
+The officer involved in the Use of Force incident was the one who recorded the race/ethnicity of themselves and the subjects. It's not clear from the form how the officer figured out the subject's race; whether they asked the subject or used their opinion of the person's race/ethnicity. That means the data is forced to reflect the officer's view of the subject's race/ethnicity, rather than what the subject would have said.
