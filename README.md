@@ -26,4 +26,4 @@ To assist with this process, we created a spreadsheet that included all reported
 
 ### One more caveat
 
-The officer involved in the Use of Force incident was the one who recorded the race/ethnicity of themselves and the subjects. It's not clear from the form how the officer figured out the subject's race; whether they asked the subject or used their opinion of the person's race/ethnicity. That means the data is forced to reflect the officer's view of the subject's race/ethnicity, rather than what the subject would have said.
+Race and ethnicity are in the eyes of the beholder, and in this case, the beholder was the officer writing the form. That officer makes an assumption about what the subject's race/ethnicity — based on appearance, behavior, or whatever else — that may be wildly different from the subject's own opinion on the matter. So tread with caution when it comes to how you phrase your reporting on this data.
