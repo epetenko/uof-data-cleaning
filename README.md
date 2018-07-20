@@ -3,6 +3,7 @@ Use of force data cleaning process
 
 
 ## How we cleaned race data
+_Erin Petenko_
 
 The initial dataset recorded race/ethnicity exactly as it was written in the form, to ensure we captured all the raw data before delving into standardization and simplification. This meant that when the raw data was finished, there were 300+ different entries for race, too many to efficiently analyze the top categories. Another complication was Hispanic/Latino ethnicity. Some forms reported it as a separate category from race, recording subjects as "White Hispanic" or "Black Hispanic", while others reported simply "Hispanic."
 
@@ -27,3 +28,9 @@ To assist with this process, we created a spreadsheet that included all reported
 ### One more caveat
 
 Race and ethnicity are in the eyes of the beholder, and in this case, the beholder was the officer writing the form. That officer makes an assumption about what the subject's race/ethnicity — based on appearance, behavior, or whatever else — that may be wildly different from the subject's own opinion on the matter. So tread with caution when it comes to how you phrase your reporting on this data.
+
+## Criminal charges data
+
+_by Erin Petenko_
+
+Again, the raw data contained exactly what officers wrote, leaving more than 10,000 unique charge names . To clean this, I separated the charges along commas and downloaded a copy of all unique charges in the data. I used OpenRefine's merge and cluster function to review and combine charges that were the same but had minor typos, such as "Ressiting" rather than "Resisting." Then reporter Craig McCarthy and I went through the charges that had more than 5 entries and standardized charge codes to names describing the charge. We retained the entries for each step of the process, iteratively reviewing our entries and re-classifying them. I then added the standardized charges back to the separated raw data, and combined them into one column again, again retaining the raw data in the spreadsheet in case we need to go back to it.
