@@ -6,7 +6,7 @@ In July 2017, the New Jersey Supreme Court ruled that police departments had to 
 
 After going through the process, we had 72,000 rows of data with roughly 30 columns each — not an unprecedented amount of data for the NJ.com data team, but one that required a lot of work to ensure we could accurately create many stories and a database without too much checking and re-checking. Thus, we decided to divide the data into three weeks of cleaning, one for each data reporter we had. After the reporter was finished, they would send their version of the data to the next reporter as well as a thorough explanation of what they did.
 
-## Week 1: Erin Petenko
+## Week 1
 
 Most of the data analysis for the first week is in the Jupyter notebook in the files of this Github and performed with Python and Pandas. But a few fields were too difficult to process with Pandas, necessitating some work in the csv files and the explanations below.
 
