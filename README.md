@@ -2,16 +2,22 @@
 How we did the data cleaning for NJ.com's Use of Force project
 
 ## Background/what is this data?
-In July 2017, the New Jersey Supreme Court ruled that police departments had to provide forms outlining their Use of Force when reporters or the public sent in records requests. To get the data for this project, NJ Advance Media sent OPRA (records) requests to every police department in New Jersey and got back every incident for the past five years in PDF documents. We sent those records to a contractor to peform the data entry processing while regularly checking their work. After going through the process, we had 72,000 rows of data with roughly 30 columns each — not an unprecedented amount of data for the NJ.com data team, but one that required a lot of work to ensure we could accurately create many stories and a database without too much checking and re-checking. Thus, we decided to divide the data into three weeks of cleaning, one for each data reporter we had. After the reporter was finished, they would send their version of the data to the next reporter as well as a thorough explanation of what they did. 
+In July 2017, the New Jersey Supreme Court ruled that police departments had to provide forms outlining their Use of Force when reporters or the public sent in records requests. To get the data for this project, NJ Advance Media sent OPRA (records) requests to every police department in New Jersey and got back every incident for the past five years in PDF documents. We sent those records to a contractor to peform the data entry processing while regularly checking their work.
 
-## How we cleaned race data
+After going through the process, we had 72,000 rows of data with roughly 30 columns each — not an unprecedented amount of data for the NJ.com data team, but one that required a lot of work to ensure we could accurately create many stories and a database without too much checking and re-checking. Thus, we decided to divide the data into three weeks of cleaning, one for each data reporter we had. After the reporter was finished, they would send their version of the data to the next reporter as well as a thorough explanation of what they did.
+
+## Week 1: Erin Petenko
+
+Most of the data analysis for the first week is in the Jupyter notebook in the files of this Github and performed with Python and Pandas. But a few fields were too difficult to process with Pandas, necessitating some work in the csv files and the explanations below.
+
+### How we cleaned race data
 _Erin Petenko_
 
 The initial dataset recorded race/ethnicity exactly as it was written in the form, to ensure we captured all the raw data before delving into standardization and simplification. This meant that when the raw data was finished, there were 300+ different entries for race, too many to efficiently analyze the top categories. Another complication was Hispanic/Latino ethnicity. Some forms reported it as a separate category from race, recording subjects as "White Hispanic" or "Black Hispanic", while others reported simply "Hispanic."
 
 To assist with this process, we created a spreadsheet that included all reported racial categories and set about manually choosing the standardized version of those entries. We relied on the New Jersey State Police racial classification system for the departments that used it. Several reporters cross-checked the data coding. We labeled ambiguous entries as "ND", or not determinable. In addition, we created optional columns that separated race and ethnicity, for entries that included both. In the end, 1.1 percent of officers and 2.3 percent of subjects had both race and Hispanic origin recorded.
 
-### The final racial classifications:
+#### The final racial classifications:
 
 - WHITE: When the officer or subject was labeled as White or Caucasian.
 - BLACK: When the entry was Black or African-American.
@@ -27,11 +33,11 @@ To assist with this process, we created a spreadsheet that included all reported
 - ND: Not determinable - When the entry was unclear, either because of poor abbreviations or unclear terminology. This includes any entry that defined race by the country of origin, such as "Ecuador," or by the religious affliation of the person. It also included obvious mistakes such as entering the gender of the person or their rank instead of their race. In all, roughly 0.4 percent of subjects and 0.2 percent of officers were coded as ND.
 - DEER: When the person was not a person but actually a deer.
 
-### One more caveat
+#### One more caveat
 
 Race and ethnicity are in the eyes of the beholder, and in this case, the beholder was the officer writing the form. That officer makes an assumption about what the subject's race/ethnicity — based on appearance, behavior, or whatever else — that may be wildly different from the subject's own opinion on the matter. So tread with caution when it comes to how you phrase your reporting on this data.
 
-## Criminal charges data
+### Criminal charges data
 
 _Erin Petenko_
 
