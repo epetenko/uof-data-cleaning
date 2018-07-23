@@ -42,3 +42,32 @@ Race and ethnicity are in the eyes of the beholder, and in this case, the behold
 _Erin Petenko_
 
 Again, the raw data contained exactly what officers wrote, leaving more than 10,000 unique charge names . To clean this, I separated the charges along commas and downloaded a copy of all unique charges in the data. I used OpenRefine's merge and cluster function to review and combine charges that were the same but had minor typos, such as "Ressiting" rather than "Resisting." Then reporter Craig McCarthy and I went through the charges that had more than 5 entries and standardized charge codes to names describing the charge. We retained the entries for each step of the process, iteratively reviewing our entries and re-classifying them. I then added the standardized charges back to the separated raw data, and combined them into one column again, again retaining the raw data in the spreadsheet in case we need to go back to it.
+
+## Week 2
+Data Diary: Use of Force cleaning week 2
+
+- Replaced old columns with edits created by  Erin in week 1 to drag down size of file. Originals exist in raw file I used, as well as originals. 
+- Created new column called officer_id, merging first name, last name and town to create first attempt at unique ID 
+- Eliminated all spaces from new column
+- Eliminated all capitalization errors, obvious extra letters in names (514 rows)
+- Merged names with and without middle initials, using badge # or other column info to check (190 rows) 
+- Created REGEX filter to break up data by cell’s starting letter due to size 
+[start a-d]
+- Merged rows on basic misspellings using Cologne-Phonetic analysis, checking primarily on badge # (292 rows)
+- Merged two groups in Bordentown where names appeared as “BLANK Bird” and “Bird BLANK” but had same badge number (11 rows)   
+- Merged 2532 cells using Cologne-Phonetic analysis. Primarily Middle initials not used on all forms. (End names [a-d]
+- [start e-l] Merged 148 cells using key collision clustering, primarily fixing capitalization. 
+- Merged 10 cells using ngram-fingerprint clustering, fixing two cases of typos
+- Merged 2245 cells using Cologne-Phoentic clustering analysis. Primarily middle initials not present on all forms.  
+Merged 2127 cells using Cologne-Phoenetic clustering analysis, bringing total for [e-l] to 4372 out of 24006 rows of data. 
+[end e-l]
+[start m-s]
+- Merged 93 cells using key collision clustering analysis. Primarily capitalization inconsistencies
+- Merged 35 cells using ngram clustering analysis. Primarily minor typos.
+- Merged 2748cells using Cologne-Phonetic clustering analysis. Primarily middle initial consistencies and minor spelling errors.  Used Badge numbers to confirm
+- Merged 1813 cells using Cologone-Phonetic clustering analysis, similarly as above, bringing total for [m-s] to 4689 of 23255 rows of data
+[start t-z] 
+- Merged 42 rows using key collision and ngram cluster analysis. Capitalization and typos. 
+- Merged 1257 rows using Cologne-Phonetic clustering analysis, similarly as above. 
+[end t-z] 
+- Created officer2id and officer3id columns, using same formula as above (not yet checked)
