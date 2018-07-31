@@ -46,3 +46,5 @@ Again, the raw data contained exactly what officers wrote, leaving more than 10,
 ## Week 2
 Most of this week centered around cleaning officer names. Steve Stirling created a new column merging first name, last name and the town of the officer for a unique ID. Then he zoomed in, using OpenRefine to cluster and merge, identifying officers who used slightly different capitalization or identification for different forms. The exact process of filtering and cleaning is the the file Week_2_readme.rtf.
 
+## Week 3
+Disha Raychaudhuri worked on the file for week 3, focusing on cleaning and standardizing badge names. We then tackled identifying individual officers -- for example, is John Smith, badge number 1234, the same person as John Smith, 1235, or are there two people with that name in one department? We used pension records to find officers in those instances. 
