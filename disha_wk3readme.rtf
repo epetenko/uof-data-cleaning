@@ -1,0 +1,25 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww20500\viewh13820\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Data Diary: Use of Force cleaning week 3\
+\
+Disha\
+\
+- Standardized date format for officer experience. Added column called ofc_exp_clean that has decimal representation of 1 year. \
+\
+- Found officers with multiple badge numbers, identified which ones were the same people and which weren\'92t. Added a column called officer_duplicate_note to distinguish between officers that have the same names and work at the same department. Officer with the lower badge number has been marked with a *; *s are added as the numbers go higher. Hyphenated badge numbers come first, and ones with letters are arranged alphabetically. \
+For example, if there are four JohnDoeBranchburgs with badge numbers 764-954, S-145, 786, 990: \
+JohnDoeBranchburg S-145 *\
+JohnDoeBranchburg 764-954 **\
+JohnDoeBranchburg 786 ***\
+JohnDoeBranchburg 990 **** \
+\
+- Checked for name errors in officer2id and officer3id columns\
+\
+                                                    \
+\
+}
