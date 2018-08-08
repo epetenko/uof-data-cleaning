@@ -56,3 +56,8 @@ With major questions identified and settled, we turned to taking a closer look a
 - Erin added the second and third officers from a form to the main column of officers to ensure that those officers were on the same level of analysis as the first officer, then identified duplicates in the data again using Steve's method. 
 
 More information about those processes are in steve_wk4readme, Second_third_officer_check.ipynb and UOF_data_cleaning_get_crime_data_from_disha.ipynb.
+
+## Officer-involved shootings
+After identifying a potential blind spot for fatal force cases in the data, we learned that the AG's office had previously provided to researchers 10 years' worth of forms similar to use of force reports known as "notifications of fatal force," which county prosecutors are required to provide to the attorney general any time an officer in their county fires his or her weapon. Those forms supplemented our dataset in a crucial area: instances in which an officer used fatal force, which we learned from sources did not always result in the completion of a standard use of force report because of some departments' policies regarding the rights of an officer under investigation.
+
+Once we collected those forms from the AG's office, we put them into the Use of Force data using the same Google form that we used to put in the original documents.
