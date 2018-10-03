@@ -61,3 +61,10 @@ More information about those processes are in steve_wk4readme, Second_third_offi
 After identifying a potential blind spot for fatal force cases in the data, we learned that the AG's office had previously provided to researchers 10 years' worth of forms similar to use of force reports known as "notifications of fatal force," which county prosecutors are required to provide to the attorney general any time an officer in their county fires his or her weapon. Those forms supplemented our dataset in a crucial area: instances in which an officer used fatal force, which we learned from sources did not always result in the completion of a standard use of force report because of some departments' policies regarding the rights of an officer under investigation.
 
 Once we collected those forms from the AG's office, we put them into the Use of Force data using the same Google form that we used to put in the original documents.
+
+
+## Nature of force
+
+## Animals
+
+## EDPs
