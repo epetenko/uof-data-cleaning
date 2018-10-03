@@ -4,7 +4,7 @@ How we did the data cleaning for NJ.com's Use of Force project
 ## Background/what is this data?
 In July 2017, the New Jersey Supreme Court ruled that police departments had to provide forms outlining their Use of Force when reporters or the public sent in records requests. To get the data for this project, NJ Advance Media sent OPRA (records) requests to every police department in New Jersey and got back every incident for the past five years in PDF documents. We sent those records to a contractor to peform the data entry processing while regularly checking their work.
 
-After going through the process, we had 72,000 rows of data with roughly 30 columns each — not an unprecedented amount of data for the NJ.com data team, but one that required a lot of work to ensure we could accurately create many stories and a database without too much checking and re-checking. Thus, we decided to divide the data into three weeks of cleaning, one for each data reporter we had. After the reporter was finished, they would send their version of the data to the next reporter as well as a thorough explanation of what they did.
+After going through the process, we had 72,000 rows of data with roughly 30 columns each — not an unprecedented amount of data for the NJ.com data team, but one that required a lot of work to ensure we could accurately create many stories and a database without too much checking and re-checking. Thus, we decided to divide the data into three weeks of cleaning, one for each data reporter we had. After the reporter was finished, they would send their version of the data to the next reporter as well as a thorough explanation of what they did. Then we continued to adjust the dataset in the analysis process as we continued to attempt to refine our data to make it easier to analyze.
 
 ## Week 1
 
@@ -70,6 +70,6 @@ Disha standardized the nature of force used by going through the unique values a
 Craig, Disha and Erin looked at rows where subjects were not named, firearms were not discharged, or the incident type included an animal term such as "deer" or "goose" or any animal Craig could think of. We took out any instance where a wild animal was euthanized, but left in any instance where a dog or pet attacked an officer, as we felt those still reflected a type of force that carried a human cost.
 
 ## EDPs
-
+EDP stands for "Emotionally Distressed Persons," used broadly for any subject with a mental illness, mental health issue or disability that affected his/her interaction with officers. Erin created a dataset of all unique incident types, and Craig went through that dataset and added a label in another column if the incident type included keywords that indicated an EDP incident, such as "Suicidal," "Mental," "Psych," or "PESS," which is the organization that often responds to a scene to take an EDP to the hospital. Then Erin added a column to the data that labeled whether or not the case was EDP.
 
 ## Officer names, again
