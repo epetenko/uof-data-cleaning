@@ -62,15 +62,17 @@ After identifying a potential blind spot for fatal force cases in the data, we l
 
 Once we collected those forms from the AG's office, we put them into the Use of Force data using the same Google form that we used to put in the original documents.
 
+## Part 2: The cleaning continues
+Although we set aside more than a month devoted solely to data cleaning, we quickly discovered our work was not over just because we had begun analysis. As we set aside reporters to clean portions of the data, we saved old versions on a hard drive and passed around the hard drive with the latest version to continue our analysis.
 
-## Nature of force
+### Nature of force
 Disha standardized the nature of force used by going through the unique values and standardizing them to different terms, such as "Tackled to the ground" rather than "Escorted to the ground" and "Brought to the ground." She standardized any force used that appeared more than 5 unique times in the data. Erin helped to stitch the new standardized column back onto the rest of the database with the same method used for charges.
 
-## Animals
+### Animals
 Craig, Disha and Erin looked at rows where subjects were not named, firearms were not discharged, or the incident type included an animal term such as "deer" or "goose" or any animal Craig could think of. We took out any instance where a wild animal was euthanized, but left in any instance where a dog or pet attacked an officer, as we felt those still reflected a type of force that carried a human cost.
 
-## EDPs
+### EDPs
 EDP stands for "Emotionally Distressed Persons," used broadly for any subject with a mental illness, mental health issue or disability that affected his/her interaction with officers. Erin created a dataset of all unique incident types, and Craig went through that dataset and added a label in another column if the incident type included keywords that indicated an EDP incident, such as "Suicidal," "Mental," "Psych," or "PESS," which is the organization that often responds to a scene to take an EDP to the hospital. Then Erin added a column to the data that labeled whether or not the case was EDP.
 
-## Officer names, again
+### Officer names, again
 Carla went through the entire officer list of more than 20,000 officers and sorted it by county, police department, and created an alphabetical list of all officers. Then she went through and selected officers that appeared to be listed twice in error, either because of middle names, nicknames, misspellings or another reason. She created a Google spreadsheet with those 4,000-plus selected names, and the entire team, particularly Steve, cross-checked the names against the New Jersey pension database and retired pension database and made sure there was only one officer of that name in a department.
