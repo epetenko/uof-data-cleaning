@@ -64,7 +64,12 @@ Once we collected those forms from the AG's office, we put them into the Use of 
 
 
 ## Nature of force
+Disha standardized the nature of force used by going through the unique values and standardizing them to different terms, such as "Tackled to the ground" rather than "Escorted to the ground" and "Brought to the ground." She standardized any force used that appeared more than 5 unique times in the data. Erin helped to stitch the new standardized column back onto the rest of the database with the same method used for charges.
 
 ## Animals
+Craig, Disha and Erin looked at rows where subjects were not named, firearms were not discharged, or the incident type included an animal term such as "deer" or "goose" or any animal Craig could think of. We took out any instance where a wild animal was euthanized, but left in any instance where a dog or pet attacked an officer, as we felt those still reflected a type of force that carried a human cost.
 
 ## EDPs
+
+
+## Officer names, again
